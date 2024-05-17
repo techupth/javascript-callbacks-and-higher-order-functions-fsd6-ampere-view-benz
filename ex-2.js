@@ -6,7 +6,7 @@ function atLeastFive(array, callbackOperation) {
   for (let i = 0; i < array.length; i++) {
     if (array[i] > 70) {
       pass++;
-      console.log(pass);
+      //console.log(pass);
     }
   }
   return callbackOperation(pass);
@@ -30,6 +30,6 @@ let scoreRoom1Result = atLeastFive(studentScoresRoom1, passCondition);
 let scoreRoom2Result = atLeastFive(studentScoresRoom2, passCondition);
 let scoreRoom3Result = atLeastFive(studentScoresRoom3, passCondition);
 
-console.log(scoreRoom1Result);
-console.log(scoreRoom2Result);
-console.log(scoreRoom3Result);
+console.log(`นักเรียนห้องที่ 1 ${scoreRoom1Result}`);
+console.log(`นักเรียนห้องที่ 2 ${scoreRoom2Result}`);
+console.log(`นักเรียนห้องที่ 3 ${scoreRoom3Result}`);
